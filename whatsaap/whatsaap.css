@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(0, 17, 18);
+  }
+  .input-head {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .actions{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #custom-input {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 250px;
+    margin-left: 20px;
+    /* height: 100px; */
+  }
+  .input-text{
+    margin: 20px;
+    margin-top: -10px;
+  }
+  #custom-input::before {
+    content: "";
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 50%
+    );
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    z-index: -1;
+    transform: rotate(-2deg);
+    border-radius: 20px;
+  }
+  
+  #custom-input input {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: #000;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    resize: none;
+    overflow: hidden;
+    /* width: 100%; */
+    height: 100%;
+  }
+  
+  #custom-input input:focus {
+    outline: none;
+  }
+  .glass-button {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    max-width: 150px;
+    margin: 10px;
+  
+  }
+  
+  .glass-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transform: translateY(-3px);
+  }
+  
+  .glass-button:hover::before {
+    transform: scale(2);
+    opacity: 0;
+  }
+  #file-lable{
+    position: relative;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
